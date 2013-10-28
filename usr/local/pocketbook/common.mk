@@ -79,6 +79,9 @@ $(OBJDIR)/%.bmp.c.o: $(OBJDIR)/%.bmp.c
 $(OBJDIR)/%.c.o: %.c
 	$(CC) -c -o $@ $(CFLAGS) $(INCLUDES) $(CDEPS) $<
 
+$(OBJDIR)/%.cc.o: %.cc
+	$(CXX) -c -o $@ $(CXXFLAGS) $(INCLUDES) $(CDEPS) $<
+
 $(OBJDIR)/%.cpp.o: %.cpp
 	$(CXX) -c -o $@ $(CXXFLAGS) $(INCLUDES) $(CDEPS) $<
 
