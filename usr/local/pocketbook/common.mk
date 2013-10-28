@@ -30,7 +30,7 @@ endif
 ifeq ($(BUILD), emu)
 PROJECT = $(OBJDIR)/$(OUT)
 LIBS += -linkview
-INCLUDES +=
+INCLUDES += -I/usr/include/freetype2
 CC  = gcc
 CFLAGS += -D__EMU__ -DIVSAPP -Wall -g -m32
 CXX = g++
