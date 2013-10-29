@@ -36,7 +36,7 @@ CFLAGS += -D__EMU__ -DIVSAPP -Wall -g -m32
 CXX = g++
 CXXFLAGS += -D__EMU__ -DIVSAPP -Wall -g -m32
 LD = g++
-LDFLAGS += -m32
+LDFLAGS += -m32 -Wl,--allow-shlib-undefined
 endif
 
 ifeq ($(BUILD), std)
