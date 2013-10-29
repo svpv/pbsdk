@@ -20,15 +20,12 @@
 #include <sys/sysinfo.h>
 #include <signal.h>
 #include <errno.h>
-
-#if 0 /* sergeyvl: no need */
-    #include <zlib.h>
-    #include <ft2build.h>
-    #include FT_FREETYPE_H
-    #include FT_GLYPH_H
-    #include FT_IMAGE_H
-    #include FT_OUTLINE_H
-#endif
+#include <zlib.h>
+#include <ft2build.h>
+#include FT_FREETYPE_H
+#include FT_GLYPH_H
+#include FT_IMAGE_H
+#include FT_OUTLINE_H
 
 #ifdef __cplusplus
 extern "C"
